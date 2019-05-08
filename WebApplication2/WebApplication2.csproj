@@ -117,6 +117,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905081042208_001init.cs" />
+    <Compile Include="Migrations\201905081042208_001init.Designer.cs">
+      <DependentUpon>201905081042208_001init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\field.cs" />
     <Compile Include="Models\products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -134,8 +140,10 @@
     <Content Include="Views\products\pp.cshtml" />
     <Content Include="Views\products\creatview.cshtml" />
     <Content Include="Views\products\Create.cshtml" />
+    <Content Include="Views\products\index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -143,6 +151,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201905081042208_001init.resx">
+      <DependentUpon>201905081042208_001init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

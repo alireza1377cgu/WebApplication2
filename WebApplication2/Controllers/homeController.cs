@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using WebApplication2.Models;
 
 namespace WebApplication2.Controllers
-{
+{//aghaye taghipoor
     public class homeController : Controller
     {
         // GET: home

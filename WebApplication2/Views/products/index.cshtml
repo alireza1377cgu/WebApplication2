@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "index";
+
+
+
+
+
+}
+
+<h2>index</h2>
+@model List<WebApplication2.Models.products>
+
+
+
+@{
+
+    ViewBag.Title = "Index";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+
+<h2>
+
+    @Html.ActionLink("ثبت دانشجوی جدید", "Create")
+
+</h2>
+
+
+
+<table class="table">
+
+    <tr>
+
+        <td>
+
+            @Html.DisplayNameFor(x => x.FirstOrDefault().ModeINO)
+
+        </td>
+
+        <td>
+
+            @Html.DisplayNameFor(x => x.FirstOrDefault().BrandName)
+
+        </td>
+
+        
+
+        <td>
+
+            @Html.DisplayNameFor(x => x.FirstOrDefault().fieldId)
+
+        </td>
+
+        <td></td>
+
+    </tr>
+
+
+
+    @foreach (var item in Model.Add)
+
+    {
+
+        <tr>
+
+            <td>
+
+                @item.ModeINO
+
+            </td>
+
+            <td>
+
+                @item.BrandName
+
+            </td>
+
+            <td>
+
+                @item.ModeINO
+
+            </td>
+
+            <td>
+
+                
+
+            </td>
+
+            <td>
+
+               
+
+            </td>
+
+        </tr>
+
+    }

@@ -15,6 +15,7 @@ namespace WebApplication2.DAL
         }
 
         public DbSet<products> Products { get; set; }
+        public DbSet<field> Fields { get; set; }
 
     }
 }
